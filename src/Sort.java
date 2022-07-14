@@ -22,9 +22,9 @@ public class Sort {
                     list[j+1] = temp;
                     flag = 0;
                 }
-                if (flag == 1)
-                    break;
             }
+            if (flag == 1)
+                break;
         }
     }
 }

@@ -10,6 +10,7 @@ public class Circle extends Shape implements Comparable{
     public int getRadius() {
         return radius;
     }
+    
     public Circle ()
     {
         this(0);
