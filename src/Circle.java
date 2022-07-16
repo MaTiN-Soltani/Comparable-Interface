@@ -1,4 +1,4 @@
-public class Circle extends Shape implements Comparable{
+public class Circle extends Shape implements Comparable<Circle>{
     private int radius;
 
     public void setRadius(int radius) {
@@ -21,7 +21,7 @@ public class Circle extends Shape implements Comparable{
     }
     
     @Override
-    public int compare(Comparable c) {
+    public int compare(Comparable<Circle> c) {
         if (this.radius > ((Circle) c).getRadius())
             return 1;
         else if (this.radius == ((Circle) c).getRadius())

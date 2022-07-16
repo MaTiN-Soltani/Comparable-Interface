@@ -1,10 +1,10 @@
-public class Sort {
-    private Comparable[] list;
+public class Sort<T> {
+    private Comparable<T>[] list;
     
-    public void setList(Comparable[] list) {
+    public void setList(Comparable<T>[] list) {
         this.list = list;
     }
-    public Comparable[] getList() {
+    public Comparable<T>[] getList() {
         return list;
     }
 
@@ -16,7 +16,7 @@ public class Sort {
             for (int j = 0; j < list.length - 1; j++) {
                 if (list[j].compare(list[j+1]) == 1)
                 {
-                    Comparable temp;
+                    Comparable<T> temp;
                     temp = list[j];
                     list[j] = list[j+1];
                     list[j+1] = temp;

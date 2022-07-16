@@ -1,4 +1,4 @@
-public interface Comparable {
+public interface Comparable<T> {
     
-    int compare(Comparable c);
+    int compare(Comparable<T> list);
 }

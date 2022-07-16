@@ -16,7 +16,7 @@ public class Main {
         //    list[i] = new Circle(new Random().nextInt(1, 10));
         //}
 
-        Sort s = new Sort();
+        Sort<Circle> s = new Sort<>();
         s.setList(list);
         s.operate();
         
