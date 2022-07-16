@@ -10,7 +10,7 @@ public class Main {
         int j = 0;
         for (Circle c : list) {
             list[j++] = new Circle(new Random().nextInt(1, 11)); //از یک تا ده میره
-            
+
         }
         //for (int i = 0; i < list.length; i++) {
         //    list[i] = new Circle(new Random().nextInt(1, 10));
@@ -19,8 +19,12 @@ public class Main {
         Sort s = new Sort();
         s.setList(list);
         s.operate();
-        for (int i = 0; i < 3; i++) {
-            System.out.println(list[i]);
+        
+        for (Circle c : list) {
+            System.out.println(c);
         }
+        //for (int i = 0; i < 3; i++) {
+        //    System.out.println(list[i]);
+        //}
     }
 }
